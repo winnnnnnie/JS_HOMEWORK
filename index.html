@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/play.css">
+</head>
+
+<body>
+
+    <script>
+        // 20190622 麻仔台作業
+         let num = 1;
+        setInterval(function(){
+            if(num == 24){
+                var string = num;
+                num = 1;
+            }else{
+                var string = num;
+                num = num + 1;
+            }
+            var before_name = 'item' +string;
+            var after_name = 'item' +num;
+            add(after_name);
+            remove(before_name);
+        },500);
+
+        function add(name) {
+          var element = document.getElementsByClassName(name);
+          element[0].classList.add("run");
+        }
+
+        function remove(name) {
+          var element = document.getElementsByClassName(name);
+          element[0].classList.remove("run");
+        }
+        
+
+
+    </script>
+
+    <table id="play" >
+        <tr>
+            <td class="item1"><img src="image/fruit_01.png" alt=""></td>
+            <td class="item2"><img src="image/fruit_04.png" alt=""></td>
+            <td class="item3"><img src="image/item01.png" alt=""></td>
+            <td class="item4"><img src="image/item05.png" alt=""></td>
+            <td class="item5"><img src="image/fruit_01.png" alt=""></td>
+            <td class="item6"><img src="image/fruit_02.png" alt=""></td>
+            <td class="item7"><img src="image/fruit_03.png" alt=""></td>
+        </tr>
+        <tr>
+            <td class="item24"><img src="image/fruit_02.png" alt=""></td>
+            <td colspan="5" rowspan="5" style="background: #8c3108;"><img src="image/banner.jpg" alt=""></td>
+            <!-- <td class="item"></td>
+            <td class="item"></td>
+            <td class="item"></td>
+            <td class="item"></td> -->
+            <td class="item8"><img src="image/fruit_05.png" alt=""></td>
+        </tr>
+        <tr>
+            <td class="item23"><img src="image/fruit_05.png" alt=""></td>
+            <!-- <td class="item"></td>
+            <td class="item"></td>
+            <td class="item"></td>
+            <td class="item"></td>
+            <td class="item"></td> -->
+            <td class="item9"><img src="image/item04.png" alt=""></td>
+        </tr>
+        <tr>
+            <td class="item22"><img src="image/fron_02.png" alt=""></td>
+            <!-- <td class="item"></td>
+            <td class="item"></td>
+            <td class="item"></td>
+            <td class="item"></td>
+            <td class="item"></td> -->
+            <td class="item10"><img src="image/fron_01.png" alt=""></td>
+        </tr>
+        <tr>
+            <td class="item21"><img src="image/item04.png" alt=""></td>
+            <!-- <td class="item"></td>
+            <td class="item"></td>
+            <td class="item"></td>
+            <td class="item"></td>
+            <td class="item"></td> -->
+            <td class="item11"><img src="image/fruit_01.png" alt=""></td>
+        </tr>
+        <tr>
+            <td class="item20"><img src="image/fruit_05.png" alt=""></td>
+            <!-- <td class="item"></td>
+            <td class="item"></td>
+            <td class="item"></td>
+            <td class="item"></td>
+            <td class="item"></td> -->
+            <td class="item12"><img src="image/item03.png" alt=""></td>
+        </tr>
+        <tr>
+            <td class="item19"><img src="image/joker.png" alt=""></td>
+            <td class="item18"><img src="image/item03.png" alt=""></td>
+            <td class="item17"><img src="image/fruit_01.png" alt=""></td>
+            <td class="item16"><img src="image/item02.png" alt=""></td>
+            <td class="item15"><img src="image/fruit_03.png" alt=""></td>
+            <td class="item14"><img src="image/fruit_05.png" alt=""></td>
+            <td class="item13"><img src="image/fruit_04.png" alt=""></td>
+        </tr>
+    </table>
+</body>
+
+</html>
